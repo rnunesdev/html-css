@@ -16,6 +16,14 @@
             border-collapse: collapse;
         }
 
+        caption {
+            background-color: lightgray;
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+
+        }
+
         thead, tfoot {
             background-color: dimgray;
             color: white;
@@ -38,9 +46,10 @@
 <body>
     <h1>Uso de tabelas grandes</h1>
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
-            <th>Estados</th>
-            <th>População</th>
+            <th scope="col">Estados</th>
+            <th scope="col" style="width: 100px;">População</th>
         </thead>
         <tbody>
             <tr>
@@ -154,7 +163,7 @@
 
         </tbody>
         <tfoot>
-            <th>Total de Habitantes</th>
+            <th scope="row">Total de Habitantes</th>
             <td>207.883.699</td>
         </tfoot>
     </table>
